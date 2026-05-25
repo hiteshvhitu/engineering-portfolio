@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitesh Venkatesh | CAD Design Engineer Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Hitesh Venkatesh — CAD Design Engineer specializing in simulation-ready geometry, CATIA V5 assembly modeling, and industrial CFD preparation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css?v=4">
+</head>
+
+<body>
+    <canvas id="particles-canvas"
+        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;"></canvas>
+
+    <!-- ═══════════════ NAVIGATION ═══════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">HV<span class="logo-dot">.</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Get in Touch</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════ HERO SECTION ═══════════════ -->
+    <header class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 id="hero-name" class="hero-name">HITESH VENKATESH</h1>
+            <p id="hero-roles" class="hero-roles"></p>
+
+            <!-- Social Icon Buttons -->
+            <div class="hero-icons">
+                <a id="icon-email" href="#" class="icon-btn" title="Email me" aria-label="Send email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a id="icon-linkedin" href="#" target="_blank" class="icon-btn" title="LinkedIn"
+                    aria-label="LinkedIn profile">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a id="icon-github" href="#" target="_blank" class="icon-btn" title="GitHub"
+                    aria-label="GitHub profile">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="hero-actions">
+                <a id="btn-resume" href="#" target="_blank" class="btn btn-primary">
+                    <i class="fa-solid fa-download"></i> Download Resume
+                </a>
+                <a id="btn-cad-portfolio" href="#" target="_blank" class="btn btn-secondary">
+                    <i class="fa-solid fa-file-pdf"></i> CAD Portfolio
+                </a>
+                <a href="#projects" class="btn btn-ghost">
+                    <i class="fa-solid fa-arrow-down"></i> View Projects
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ═══════════════ PROJECTS SECTION ═══════════════ -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-heading">
+                    <span class="heading-text">Engineering Projects</span>
+                    <span class="heading-line"></span>
+                </h2>
+
+                <!-- Filter Buttons -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="Industrial CAD">Industrial CAD</button>
+                    <button class="filter-btn" data-filter="R&D Projects">R&D Projects</button>
+                </div>
+
+                <div id="projects-grid" class="projects-grid">
+                    <!-- Dynamically populated -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════ EXPERIENCE SECTION ═══════════════ -->
+        <section id="experience" class="section parallax-section">
+            <div class="parallax-overlay"></div>
+            <div class="container relative-z">
+                <h2 class="section-heading">
+                    <span class="heading-text">Professional Experience</span>
+                    <span class="heading-line"></span>
+                </h2>
+                <div id="experience-container" class="experience-list">
+                    <!-- Dynamically populated -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════ SOFTWARE & TOOLS SECTION ═══════════════ -->
+        <section id="tools" class="section section-alt">
+            <div class="container">
+                <h2 class="section-heading">
+                    <span class="heading-text">Software & Tools</span>
+                    <span class="heading-line"></span>
+                </h2>
+                <div id="tools-container" class="tools-bar">
+                    <!-- Dynamically populated -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════ PATENTS SECTION ═══════════════ -->
+        <section id="patents" class="section parallax-section">
+            <div class="parallax-overlay"></div>
+            <div class="container relative-z">
+                <h2 class="section-heading">
+                    <span class="heading-text">Patents & Publications</span>
+                    <span class="heading-line"></span>
+                </h2>
+                <div id="patents-container" class="patents-grid">
+                    <!-- Dynamically populated -->
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- ═══════════════ EDUCATION SECTION ═══════════════ -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-heading">
+                    <span class="heading-text">Education</span>
+                    <span class="heading-line"></span>
+                </h2>
+                <div id="education-container" class="education-list">
+                    <!-- Dynamically populated -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════ ABOUT ME SECTION ═══════════════ -->
+        <section id="about" class="section parallax-section">
+            <div class="parallax-overlay translucent-overlay"></div>
+            <div class="container relative-z">
+                <h2 class="section-heading">
+                    <span class="heading-text">About Me</span>
+                    <span class="heading-line"></span>
+                </h2>
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img id="about-img" src="" alt="Hitesh Venkatesh">
+                    </div>
+                    <div class="about-text" id="about-text">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════ GET IN TOUCH SECTION ═══════════════ -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-heading">
+                    <span class="heading-text">Get in Touch</span>
+                    <span class="heading-line"></span>
+                </h2>
+                <div class="contact-grid">
+                    <!-- Left: Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <p class="contact-intro">Got a project idea or just want to say hello? I would love to hear from
+                            you. Drop me a message and I will get back to you as soon as I can.</p>
+                        <form id="contact-form" class="contact-form" action="mailto:hitesh.v.hitu@gmail.com"
+                            method="POST" enctype="text/plain">
+                            <div class="form-group">
+                                <label for="contact-name">Your Name</label>
+                                <input type="text" id="contact-name" name="name" placeholder="e.g. Jane Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Your Email</label>
+                                <input type="email" id="contact-email" name="email" placeholder="e.g. jane@example.com"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Your Message</label>
+                                <textarea id="contact-message" name="message" rows="5"
+                                    placeholder="Tell me about your project or opportunity..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full" id="send-message-btn">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                        <a id="btn-contact-linkedin" href="#" target="_blank" class="btn btn-secondary btn-full" style="margin-top: 16px;">
+                            <i class="fa-brands fa-linkedin"></i> <strong>LinkedIn</strong>
+                        </a>
+                    </div>
+
+                    <!-- Right: Google Maps + Relocation Note -->
+                    <div class="contact-map-wrapper">
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124415.71962381284!2d77.5100062!3d12.9715987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" title="Location - Bengaluru, India">
+                            </iframe>
+                        </div>
+                        <div class="relocation-note">
+                            <i class="fa-solid fa-plane-departure"></i>
+                            <p>I am open to international relocation for opportunities in Design Engineering, Product
+                                Development, and CAD-driven simulation roles. If your team needs someone who can deliver
+                                clean geometry and solid assemblies, let us talk.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer>
+        <div class="container footer-inner">
+            <p>&copy; <span id="current-year"></span> Hitesh Venkatesh.</p>
+        </div>
+    </footer>
+
+    <!-- ═══════════════ PROJECT MODAL ═══════════════ -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+            <div id="modal-body">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ MEDIA PLAYER MODAL ═══════════════ -->
+    <div id="media-player-modal" class="modal" style="z-index: 3000;">
+        <div class="modal-content media-modal-content">
+            <button class="modal-close" id="media-modal-close" aria-label="Close media">&times;</button>
+            <div class="media-container">
+                <div id="media-modal-body" class="media-modal-body">
+                    <!-- Dynamically populated iframe or img -->
+                </div>
+                <div id="media-caption-overlay" class="media-caption-overlay"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js?v=4"></script>
+    <script src="js/animation.js?v=4"></script>
+    <script src="js/app.js?v=4"></script>
+</body>
+
+</html>
