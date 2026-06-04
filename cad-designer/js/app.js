@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ── Hero Section ──
     document.getElementById('hero-name').textContent = d.personal.name;
     document.getElementById('hero-roles').textContent = d.personal.roles.join('  ·  ');
+    document.getElementById('hero-quote').textContent = d.personal.quote;
 
     // Hero icon links
     document.getElementById('icon-email').href = `mailto:${d.personal.email}`;

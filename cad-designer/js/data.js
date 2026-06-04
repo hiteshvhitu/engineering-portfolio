@@ -12,6 +12,7 @@ const portfolioData = {
     personal: {
         name: "HITESH VENKATESH",
         roles: ["CAD Design Engineer", "Simulation Geometry Specialist", "Aerospace Engineer"],
+        quote: `"I don't just model parts. I look at the purpose behind them, how they will be made, what tolerances are important, and how stresses are likely to be distributed within the part."`,
         email: "hitesh.v.hitu@gmail.com",
         phone: "+91-9986107024",
         linkedin: "https://www.linkedin.com/in/hitesh-v-553b28238/",
@@ -26,7 +27,7 @@ const portfolioData = {
         aboutBgOpacity: 0.7, // Change this value from 0.0 (fully transparent) to 1.0 (fully dark) to control the overlay darkness over the background
 
         // Download links for hero buttons
-        resumeLink: "https://drive.google.com/file/d/1U-DWw9q8ydpV0W9jq63lTsKSSq_rsITb",           // Google Drive link to your resume PDF
+        resumeLink: "https://drive.google.com/file/d/1H9RdP-u-HehNcnCKPFohUllJUqftkARW/view?usp=drive_link",           // Google Drive link to your resume PDF
         cadPortfolioLink: "#",     // Google Drive link to your CAD Portfolio PDF
 
         // Profile image for About section — replace with your Google Drive link

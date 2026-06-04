@@ -99,8 +99,14 @@ body {
 }
 .hero-roles {
     font-size: 1.05rem; color: var(--accent-light); font-weight: 500;
-    letter-spacing: 1.5px; margin-bottom: 28px;
+    letter-spacing: 1.5px; margin-bottom: 16px;
     text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+.hero-quote {
+    font-size: 1.05rem; color: var(--text-primary); font-style: italic;
+    max-width: 650px; margin: 0 auto 32px auto; line-height: 1.6;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    font-weight: 400;
 }
 
 /* Hero Icon Buttons */
