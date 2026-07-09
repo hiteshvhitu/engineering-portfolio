@@ -30,7 +30,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // ── Hero Section ──
     document.getElementById('hero-name').textContent = d.personal.name;
     document.getElementById('hero-roles').textContent = d.personal.roles.join('  ·  ');
-    document.getElementById('hero-quote').textContent = d.personal.quote;
+    // ── Rotating Hero Quotes ──
+    const quoteEl = document.getElementById('hero-quote');
+    const quotes = d.personal.quotes || [];
+    if (quotes.length > 0) {
+        let currentQuoteIndex = 0;
+        quoteEl.textContent = quotes[currentQuoteIndex];
+
+        if (quotes.length > 1) {
+            setInterval(() => {
+                quoteEl.classList.add('fade-out');
+                setTimeout(() => {
+                    currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
+                    quoteEl.textContent = quotes[currentQuoteIndex];
+                    quoteEl.classList.remove('fade-out');
+                }, 500); // 500ms matches the CSS transition duration
+            }, 10000); // 10 seconds interval
+        }
+    }
 
     // Hero icon links
     document.getElementById('icon-email').href = `mailto:${d.personal.email}`;
